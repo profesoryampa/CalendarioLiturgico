@@ -1,11 +1,8 @@
-// This file is intentionally left blank.
-// The firebase config will be populated by the Firebase Studio CLI.
-// This is to prevent the accidental an unintended check-in of firebase project credentials.
 export const firebaseConfig = {
-  "projectId": "studio-6241011752-235cb",
-  "appId": "1:752974561390:web:c80dcf1809bf2be70b267f",
-  "apiKey": "AIzaSyC7MfmURkpttEW16HYRO36__wa57CTuRTg",
-  "authDomain": "studio-6241011752-235cb.firebaseapp.com",
-  "measurementId": "",
-  "messagingSenderId": "752974561390"
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
 };
